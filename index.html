@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  	<style>
+
+  		body{
+  			background-image: url("nail_polish.jpg")
+  		}
+		h4 {
+			padding-bottom: 15px; 
+		}
+
+		.jumbotron{
+			background-color:#FEC5CB; 
+			background-color-opacity : 50%;
+			color: black; 
+		}
+
+		#main {
+			width: 60%;
+			border: 1px gray solid;
+			margin: auto;
+			padding: 10px;
+			background-color: white;
+			border-radius: 10px;
+			}
+		button{
+			border-radius: 12px;
+			margin-top: 30px;
+			background-color: white
+			border: 2px solid #e7e7e7;
+		}
+
+
+
+		#response{
+			width: 60%;
+			border: 1px gray solid;
+			margin: auto;
+			padding: 10px;
+			margin-top: 10px;
+			padding-bottom: 30px; 
+			background-color: #FEC5CB;
+			border-radius: 10px;
+		}
+		
+		
+		</style>
+    <title>What Nail Polish are You?</title>
+  </head>
+<body>
+
+	<div class= "container-fluid">
+		<div class="jumbotron">
+			<h1> What Nail Polish Color are You?</h1>
+		</div>
+	</div>
+	<br>
+<div id="main">
+<form id="myform">
+
+	
+
+	<h4>What is your favorite season?</h4>
+		<p><input type="radio" name="season" value="blue" id="winter" /><label for="winter">Winter</label></p>
+		<p><input type="radio" name="season" value="pink" id="spring" /><label for="spring">Spring</label></p>
+		<p><input type="radio" name="season" value="orange" id="summer" /><label for="summer">Summer</label></p>
+		<p><input type="radio" name="season" value="brown" id="fall" /><label for="fall">Fall</label></p>
+			
+
+   
+	<h4>What does your typical Saturday night look like?</h4>
+			<p><input type="radio" name="night" value="blue" id="in" /><label for="in">Night in, for sure.</label></p>
+
+			<p><input type="radio" name="night" value="pink" id="out" /><label for="out">Are you kidding? Let's party!</label></p>
+
+			<p><input type="radio" name="night" value="orange" id="in" /><label for="in">A little wining and dining.</label></p>
+
+			<p><input type="radio" name="night" value="brown" id="in" /><label for="in">Probably self care related. </label></p>
+
+		
+
+		<h4>How would you describe your style?</h4>
+			<p><input type="radio"  name="style" value="blue" id="casual" /><label for="casual"> Casual</label></p>
+			<p><input type="radio" name="style" value="pink" id="comfortable"/> <label for="comfortable"> Comfortable</label></p>
+			<p><input type="radio"  name="style" value="orange" id="clean" /> <label for="clean"> Whatever's Clean </label></p>
+			<p><input type="radio"  name="style" value="brown" id="lany" /><label for="lany"> NYC meets LA </label></p>
+			
+		<h4>Your friend texts you to come and workout with them, you...</h4>
+			<p><input type="radio" name="workout" value="blue" id="30" /><label for="30">Meet them there in 30 minutes.</label></p>
+			<p><input type="radio" name="workout" value="pink" id="dance" /><label for="dance">Convince them to just comeover for a dance party of two in your kitchen.</label></p>
+			<p><input type="radio" name="workout" value="orange" id="food" /><label for="food">Make them agree to get food with you afterward too. </label></p>
+			<p><input type="radio" name="workout" value="brown" id="nope" /><label for="nope">Make up an excuse not to go.</label></p>
+
+		<h4>What's your coffee order?</h4>
+			<p><input type="radio" name="coffee" value="blue" id="latte" /><label for="latte">Oatmilk Latte, baby.</label></p>
+			<p><input type="radio" name="coffee" value="pink" id="frap" /><label for="frap">Frap with extra whip cream</label></p>
+			<p><input type="radio" name="coffee" value="orange" id="matcha" /><label for="matcha">Coffee? Ew. Matcha? Yes. </label></p>
+			<p><input type="radio" name="coffee" value="brown" id="black" /><label for="black">Black, gotta wake up.</label></p>
+		
+		<h4>Your laptop is open for all to see, what kind of tabs can people expect to find? </h4>
+			<p><input type="radio" name="tabs" value="blue" id="email" /><label for="emails">Emails, emails, oh, and did I mention emails?</label></p>
+			<p><input type="radio" name="tabs" value="pink" id="shop" /><label for="shop">Online shopping, things from Amazon I don't need, and Spotify.</label></p>
+			<p><input type="radio" name="tabs" value="orange" id="vaycay" /><label for="vaycay">AirBNB options, flight prices, and my pinterest board for the next vacay I desperately need. </label></p>
+			<p><input type="radio" name="tabs" value="brown" id="google" /><label for="google">Random Google searches of the word I couldn't remember the other day.</label></p>
+			
+		<h4>Someone bumps into you while you're carrying your caffine of choice, spilling it all over yourself. What's your reaction?</h4>
+		
+			<p><input type="radio" name="bump" value="blue" id="sorry" /><label for="sorry">Say sorry, I probably wasn't paying attention and day-dreaming.</label></p>
+			
+			<p><input type="radio" name="bump" value="pink" id="ugh" /><label for="ugh">I'm annoyed, but it's no biggie. I have time to go home and change.</label></p>
+			
+			<p><input type="radio" name="bump" value="orange" id="bye" /><label for="bye">I'm so embarassed, just need to get out of here as quickly as possible.
+			</label></p>
+
+			<p><input type="radio" name="bump" value="brown" id="pissed" /><label for="pissed">WTF?! I'm gonna ask whoever this moron is to buy me another drink. </label></p>
+
+			<div class ="container">
+		<div class="row">
+    		<div class="col-lg-4">
+				<button type="submit" value="Submit">Let's find out...</button>
+				</div>
+			</div>
+		</div>
+
+    
+
+	</div>
+</div>
+
+
+
+
+	
+ <!--
+		<div class="container">
+			<div class= "row">
+				<div class="col-lg-8">
+		 <iframe id="gif" src="https://giphy.com/embed/NeN2yboR9rLDW" width="480" height="355" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sailor-moon-family-guy-nails-NeN2yboR9rLDW">via GIPHY</a> </p>
+		</div> 
+
+	-->
+
+</form>
+
+<h2 id="response">Your color is <span id="answer"></span></h2>
+
+
+</div>
+<script>
+ 
+    
+	document.getElementById("myform").onsubmit=function() {
+
+		if(document.querySelector('input[name = "season"]:checked') &&  document.querySelector('input[name = "night"]:checked') && document.querySelector('input[name = "style"]:checked') && document.querySelector('input[name = "workout"]:checked') && document.querySelector('input[name = "coffee"]:checked') && document.querySelector('input[name = "tabs"]:checked') && document.querySelector('input[name = "bump"]:checked')){
+	   
+    //displays the response DOM element
+    document.getElementById("response").style.display = "block";
+    
+    //resets the DOM element on submit
+    document.getElementById("answer").innerHTML = "";
+	   
+	  season = document.querySelector('input[name = "season"]:checked').value;
+
+	  night = document.querySelector('input[name = "night"]:checked').value;
+	   
+	  style = document.querySelector('input[name = "style"]:checked').value;
+
+	  workout = document.querySelector('input[name = "workout"]:checked').value;
+
+	  coffee = document.querySelector('input[name = "coffee"]:checked').value;
+
+	  tabs = document.querySelector('input[name = "tabs"]:checked').value;
+
+	  bump = document.querySelector('input[name = "bump"]:checked').value;
+    
+    // use console.log to see result of each variable to check
+    console.log(season);
+    console.log(night);
+    console.log(style);
+     console.log(workout);
+    console.log(coffee);
+    console.log(tabs);
+    console.log(bump);
+	    
+	  // initialize score variables 
+	  blue = 0;
+	  pink = 0;
+	  orange = 0;
+	  brown = 0; 
+	  
+	  //function to calculate score for each question
+	  function eachscore(x){
+	  if(x == "blue") { blue = blue + 1}
+	  if(x == "pink") { pink = pink + 1}
+	  if(x == "orange") { orange = orange + 1}
+	  if(x == "brown") { brown = brown + 1}
+	  }
+	  // for the above function, you could also change the 1 to a variable so you could give more points for certain questions
+	  
+	  //call function for each question
+	  eachscore(eval("season"));
+	  eachscore(eval("night"));
+	  eachscore(eval("style"));
+	  eachscore(eval("workout"));
+	  eachscore(eval("coffee"));
+	  eachscore(eval("tabs"));
+	  eachscore(eval("bump")); 
+	  
+      // use console.log to see result of each variable to check
+    console.log(blue);
+    console.log(pink);
+    console.log(orange);
+    console.log(brown);
+	  
+	  all = [blue, pink, orange, brown];
+	  
+	//get the max score  in the array
+	maxscore = Math.max.apply(Math,all);
+    
+    // object holding scores and feedback	
+scores = [{index:0, feedback: "Baby Blue"},
+{index:1, feedback: "Pretty In Pink"},
+{index:2, feedback: "Sunset Orange"},
+{index:3, feedback: "Bouggee Brown"}];
+
+	
+    //figure out which index # holds the max score 
+	for(i=0; i<all.length; i++) {
+	if(all[i]==maxscore) {
+    //this gets one answer, the last one it encounters with a match
+    document.getElementById("answer").innerHTML = scores[i].feedback;
+    
+    //this version would allow for appending multiple answers; replace statement above
+    //document.getElementById("answer").innerHTML += scores[i].feedback + ". ";
+
+
+	}
+			   
+  }
+
+	}
+
+	// reminds user to submit answers to all questions.
+		else {
+		alert("Fill out all questions before submitting.");
+		}
+	return false; // required to not refresh the page; just leave this here
+	   }// end the submit function
+	
+
+</script>
+
+
+
+  </body>
+</html>
